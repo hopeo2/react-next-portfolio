@@ -10,12 +10,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
     return (
@@ -24,9 +19,9 @@ export default function Home() {
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between">
                         <h1 className="flex font-burtons md:text-2xl sm:text-sm dark:text-white">
-                            developed-By-hope
+                            Hope
                         </h1>
-                        <ul className="flex items-center">
+                        <ul className="flex items-center md:text-2xl sm:text-4sm">
                             <li>
                                 <BsFillMoonStarsFill
                                     onClick={() => setDarkMode(!darkMode)}
