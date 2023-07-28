@@ -1,14 +1,8 @@
 "use client";
 
 import Head from "next/head";
-import {
-    AiFillTwitterCircle,
-    AiFillLinkedin,
-} from "react-icons/ai";
-import {
-  ImTelegram,
-  ImWhatsapp,
-} from "react-icons/im";
+import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
+import { ImTelegram, ImWhatsapp } from "react-icons/im";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/alikz.png";
@@ -29,19 +23,22 @@ export default function Home() {
             <main className="px-10 dark:bg-gray-900">
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between">
-                        <h1 className="font-burtons md:text-2xl sm:text-sm dark:text-white">
+                        <h1 className="flex font-burtons md:text-2xl sm:text-sm dark:text-white">
                             developed-By-hope
                         </h1>
                         <ul className="flex items-center">
                             <li>
-                                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl dark:text-white" />
+                                <BsFillMoonStarsFill
+                                    onClick={() => setDarkMode(!darkMode)}
+                                    className=" cursor-pointer text-2xl dark:text-white"
+                                />
                             </li>
                             <li>
                                 <a
                                     className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                                    href="#"
+                                    href="#service"
                                 >
-                                    Resume
+                                    about me
                                 </a>
                             </li>
                         </ul>
@@ -62,7 +59,7 @@ export default function Home() {
                             <AiFillTwitterCircle />
                             <AiFillLinkedin />
                             <a href="https://t.me/Ali_kz_77" target="_blank">
-                            <ImTelegram />
+                                <ImTelegram />
                             </a>
                         </div>
                         <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full  h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -70,19 +67,27 @@ export default function Home() {
                                 src={deved}
                                 layout="fill"
                                 objectFit="cover"
+                                alt="this-is-ali-kz-image"
                             />
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div>
-                        <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+                    <div id="service">
+                        <h3 className="text-3xl py-1 dark:text-white">
+                            Services I offer
+                        </h3>
                         <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
                             Since the beginning of my journey as a freelance
                             designer and developer, I've done remote work for
-                            <span className="text-teal-500 dark:text-white"> agencies </span>
+                            <span className="text-teal-500 dark:text-white">
+                                {" "}
+                                agencies{" "}
+                            </span>
                             consulted for{" "}
-                            <span className="text-teal-500 dark:text-white">startups </span>
+                            <span className="text-teal-500 dark:text-white">
+                                startups{" "}
+                            </span>
                             and collaborated with talanted people to create
                             digital products for both business and consumer use.
                         </p>
@@ -93,7 +98,12 @@ export default function Home() {
                     </div>
                     <div className="lg:flex gap-10">
                         <div className="text-center shadow-lg shadow-cyan-500/50 p-10 rounded-xl my-10 flex-1">
-                            <Image src={design} width={100} height={100} />
+                            <Image
+                                src={design}
+                                width={100}
+                                height={100}
+                                alt="this-is-image--"
+                            />
                             <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
                                 Beautiful Designs
                             </h3>
@@ -104,13 +114,26 @@ export default function Home() {
                             <h4 className="py-4 text-teal-600 dark:text-white">
                                 Design Tools I Use
                             </h4>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Photoshop</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Illustrator</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Figma</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Indesign</p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Photoshop
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Illustrator
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Figma
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Indesign
+                            </p>
                         </div>
                         <div className="text-center shadow-lg shadow-cyan-500/50 p-10 rounded-xl my-10 flex-1">
-                            <Image src={code} width={100} height={100} />
+                            <Image
+                                src={code}
+                                width={100}
+                                height={100}
+                                alt="this-is-image--"
+                            />
                             <h3 className="text-lg font-medium pt-8 pb-2 dark:text-yellow-100">
                                 Code your dream project
                             </h3>
@@ -121,13 +144,26 @@ export default function Home() {
                             <h4 className="py-4 text-teal-600 dark:text-white">
                                 Design Tools I Use
                             </h4>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Photoshop</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Illustrator</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Figma</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Indesign</p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Photoshop
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Illustrator
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Figma
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Indesign
+                            </p>
                         </div>
                         <div className="text-center shadow-lg shadow-cyan-500/50 p-10 rounded-xl my-10 flex-1">
-                            <Image src={consulting} width={100} height={100} />
+                            <Image
+                                src={consulting}
+                                width={100}
+                                height={100}
+                                alt="this-is-image--"
+                            />
                             <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                                 Consulting
                             </h3>
@@ -139,13 +175,25 @@ export default function Home() {
                             <h4 className="py-4 text-teal-600 dark:text-white">
                                 Design Tools I Use
                             </h4>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Photoshop</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Illustrator</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Figma</p>
-                            <p className="text-gray-800 py-1 dark:text-yellow-100">Indesign</p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Photoshop
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Illustrator
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Figma
+                            </p>
+                            <p className="text-gray-800 py-1 dark:text-yellow-100">
+                                Indesign
+                            </p>
                         </div>
                     </div>
                 </section>
+                <footer className="py-10 border-t-2 flex align-center font-burtons text-3xl justify-center dark:text-white">
+                    made with lov3{" "}
+                    <code className="text-red-600">&nbsp; ;)</code>
+                </footer>
             </main>
         </div>
     );
